@@ -1,0 +1,23 @@
+{
+  "name": "atomicwork_assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akash4223/atomicwork_assignment.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akash4223/atomicwork_assignment/issues"
+  },
+  "homepage": "https://github.com/akash4223/atomicwork_assignment#readme",
+  "dependencies": {
+    "parcel": "^2.13.0"
+  }
+}
