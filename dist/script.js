@@ -827,7 +827,7 @@ let calculatorErrTxt = document.querySelector(".calc-err-txt");
 let AtomicWorkCostPerEmp = 90; //annual cost in USD
 let timeTakenByTool = 5; //mins taken by Atomic work took to resolve a single query
 let calcSubBtn = document.querySelector(".calc-submit-button");
-let revealButton = document.querySelector("#reveal_btn");
+let getReportForm = document.querySelector(".get-report-form-wrapper");
 //accept only numbers in calculator fields
 numberFields.forEach(function(field) {
     field.addEventListener("input", function() {
@@ -864,8 +864,8 @@ calcSubBtn.addEventListener("click", (e)=>{
         //This amount of time was dedicated by humans for solving queries, now this will be taken care of by machine
         let timeSaved = queries.value / totalResources.value * totalHours.value;
         timeSavedTxt.innerHTML = `${timeSaved.toFixed(2)} hrs`;
-        //show revel data button
-        revealButton.style.display = "block";
+        //show get report form
+        getReportForm.classList.remove("u-hidden");
     }
 });
 //////////////////VALIDATE GET REPORT FIELD/////////////////
